@@ -8,5 +8,5 @@ variable "proxmox_host" {
 }
 variable "template_name" {
   type = string  
-  default = "suse-15.4-template"
+  default = "deb-11-cloudinit-temp"
 }
