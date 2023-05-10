@@ -1,3 +1,5 @@
+## Proxmox part
+
 #### iso links:
 ```
 debian  http://cdimage.debian.org/cdimage/cloud/
@@ -13,7 +15,7 @@ $ wget http://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstac
 
 
 
-### Create vm on proxmox
+#### Create vm on proxmox
 
 - Create the instance
 ```
@@ -53,3 +55,22 @@ qm resize 9000 virtio0(sc) +8G
 ```
 qm template 9000
 ```
+
+
+## Terraform part
+
+- create user and api_token
+- add privileges on storage 
+- inicialize terrafor provider
+```
+terraform init
+```
+- test configuration script terraform
+```
+terraform plan
+```
+- create vm 
+```
+terraform appy
+```
+
