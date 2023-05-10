@@ -59,10 +59,14 @@ qm template 9000
 
 ## Terraform part
 
+#### on proxmox
 - create user and api_token
 - add privileges on storage 
 - inicialize terrafor provider
 ```
+
+
+#### on a terraform directory on local pc
 terraform init
 ```
 - test configuration script terraform
