@@ -7,16 +7,15 @@
 ## Proxmox part
 
 #### iso links:
+
+- [debian](http://cdimage.debian.org/cdimage/cloud/)
+- [ubuntu](https://cloud--images-ubuntu-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=sc)
+- [suse](https://get.opensuse.org/leap/15.4/#)
+
 ```bash
-debian  http://cdimage.debian.org/cdimage/cloud/
-ubuntu  https://cloud--images-ubuntu-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=sc
-suse    https://get.opensuse.org/leap/15.4/#
-
-
 examle:
 
 $ wget http://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2
-
 ```
 
 
