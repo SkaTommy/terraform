@@ -15,7 +15,7 @@
 ```bash
 examle:
 
-$ wget http://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2
+$ wget http://cdimage.debian.org/cdimage/cloud/bullseye/20230501-1367/debian-11-generic-amd64-20230501-1367.qcow2
 ```
 
 
