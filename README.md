@@ -3,7 +3,6 @@
 </a>
 
 
-
 ## Proxmox part
 
 #### iso links:
@@ -51,14 +50,14 @@ $ qm set 905 -scsihw virtio-scsi-pci --scsi0 local:905/vm-905-disk-0.raw --ide2 
 - Resize the primary boot disk (otherwise it will be around 2G by default)
 - This step adds another 8G of disk space, but change this as you need to
 ```bash
-$ qm resize 9000 virtio0(sc) +8G
+$ qm resize 905 virtio0(sc) +8G
 ```
 
 
 
 - Convert the VM to the template
 ```bash
-$ qm template 9000
+$ qm template 905
 ```
 
 
@@ -72,14 +71,14 @@ $ qm template 9000
 #### on a terraform directory on local pc
 - inicialize terrafor provider
 ```bash
-terraform init
+$ terraform init
 ```
 - test configuration script terraform
 ```bash
-terraform plan
+$ terraform plan
 ```
 - create vm 
 ```bash
-terraform appy
+$ terraform appy
 ```
 
