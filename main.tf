@@ -1,9 +1,9 @@
 
-resource "proxmox_vm_qemu" "srv_test" {
+resource "proxmox_vm_qemu" "k8s" {
 ##### кол-во создоваемых машин
-  count = 3
+  count = 1
 ##### имена  
-  name = "db-node-${count.index + 1}"
+  name = "master-k8s-${count.index + 1}"
   desc = "terraform deploy"
   ##### vmid = "${count.index + 1}"
 ##### имя ноды куда будет установлена vm     
@@ -13,7 +13,7 @@ resource "proxmox_vm_qemu" "srv_test" {
   agent = 1
 
 ##### кол-во ядер  
-  cores = 2
+  cores = 4
   sockets = 1
   cpu = "host"
 ##### ram  
@@ -46,7 +46,7 @@ resource "proxmox_vm_qemu" "srv_test" {
 
 ##### ip 
   ##### ipconfig0 = "ip=192.168.0.41/24,gw=192.168.0.1"
-  ipconfig0 = "ip=192.168.0.20${count.index + 1}/24,gw=192.168.0.1"
+  ipconfig0 = "ip=192.168.0.15${count.index + 1}/24,gw=192.168.0.1"
   nameserver = "8.8.8.8"
 
 ##### ssh
